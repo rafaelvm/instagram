@@ -76,6 +76,10 @@ input {
     
 }
 
+input:focus {
+    outline-color: rgb(151, 192, 255);
+}
+
 input[type="text"] {
     font-size: 16px;
     border: 1px solid rgb(182, 181, 181);
