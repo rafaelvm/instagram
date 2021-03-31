@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 18px;
+    background: rgb(247, 247, 247);
+
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    align-items: center;
+    width: 70%;
+    height: 100vh;
+}
+
+        /* FIRST DIV CONTAINER*/
+
+.photo-cel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+        
+.photo-cel img {
+    height: 50rem;
+}
+
+.photo-logo {
+    margin: 0.5rem 0 0.5rem 5rem;
+}
+
+::placeholder {
+    color: gray;
+    font-size: 12px;
+    padding: 0.2rem;
+  }
+
+fieldset {
+    padding: 1.5rem;
+    margin-top: 7rem;
+    border: 1px solid rgb(180, 180, 180);
+    outline: none;
+    width: 400px;
+    height: 430px;
+    background-color: #ffff;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+input {
+    width: 300px;
+    background-color:  rgb(240, 240, 240);
+    margin-left: 2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    
+}
+
+input[type="text"] {
+    font-size: 16px;
+    border: 1px solid rgb(182, 181, 181);
+   
+}
+
+input[type="password"]{
+    font-size: 16px;
+    border: 1px solid rgb(182, 181, 181);
+}
+
+input[type="button"]{
+    color: white;
+    background-color: rgb(151, 192, 255);
+    border: none;
+    cursor: pointer;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0 0 1.5rem;
+    color: rgb(145, 145, 145);
+}
+
+span::before, span::after{
+    content: '';
+    height: 1px;
+    width: 130px;
+    background:  rgb(145, 145, 145);
+    margin: 0.5rem 0.4rem 0 0.6rem;
+}
+
+.face {
+    color: rgb(1, 1, 112);
+    text-align: center;
+    margin: 2rem 0 0 2rem;
+    font-size: 16px;
+}
+
+.face a {
+    color: rgb(1, 1, 112);
+}
+
+#senha {
+    color: rgb(1, 1, 112);
+    text-align: center;
+    margin: 1.5rem 0 0 2rem;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+        /* SECOND DIV CONTAINER*/
+.cadastro {
+    border: 1px solid rgb(180, 180, 180);
+    width: 415px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem !important;
+}
+        
+.cadastro a {
+    padding-left: 0.3rem;
+    color: rgb(120, 172, 250);
+    font-weight: bolder;
+        }
+
+.app > p {
+    text-align: center;
+    margin-top: 1rem;
+}
+.app > img {
+    margin-top: 1rem;
+}
+
+        /* RESPONSIVIDADE*/
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    .photo-cel {
+        display: none;
+    }
+}
